@@ -1,0 +1,21 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Build artifacts
+build/
+dist/
+
+# Logs
+npm-debug.log*
+*.log
+
+# macOS specific
+.DS_Store
+
+
+credentials.json
+Server/credentials.json
+*/credentials.json
