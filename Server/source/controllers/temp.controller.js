@@ -7,10 +7,7 @@ const setdata = async (req, res) => {
   const { deviceId, temp, turb, do_val, tds } = req.body;
   console.log(req.body)
 
-  if ( deviceId === undefined || temp === undefined || turb === undefined || do_val === undefined || tds === undefined) {
-    throw new ApiError(400, "All fields required");
-  } 
-  try {
+  try { 
     const tempData = await Temp.create({
       deviceId,
       temperature: temp,
